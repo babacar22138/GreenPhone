@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenPhone - home</title>
+    <!-- Pour la police d'écriture (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Liens css -->
+     <link rel="stylesheet" href="/css/base.css">
+     <link rel="stylesheet" href="/css/reset.css">
+     <link rel="stylesheet" href="/css/variables.css">
+     <link rel="stylesheet" href="/css/header.css">
+     <link rel="stylesheet" href="/css/home.css">
+     <!-- import bibliothèque pour icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <h1 id="titre"><span id="green">Green</span>Phone </h1>
+        <p id="sous-titre">Le reconditionné en toute confiance !</p>
+
+        <div class="burger-search-bar-icons">
+            <!-- burger icon -->
+            <div class="burger">
+                <input type="checkbox" id="grid">
+
+                <label for="grid" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <!-- search bar -->
+            <div class="search-bar">
+                <input type="search" id="search-bar" placeholder="iPhone 12...">
+            </div>
+
+            <!-- icons -->
+            <div class="icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+            
+            
+            <div class="menu-nav">
+                <p>Faite votre choix !</p>
+                <nav>
+                    <ul>
+                        <li id="bon-plan"><a href="#">Bon plan</a></li>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">Airpods</a></li>
+                        <li><a href="#">Xiaomi</a></li>
+                        <li><a href="#">Coque</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="bannier">
+            <img src="/img/home/banniere_page_acceuil.png" alt="femme joyeuse regardant son téléphone.">
+            <p>Pour la planète, et vous !</p>
+        </div>
+    </main>
+
+    <script src="/js/header.js"></script>
+</body>
+
+</html>

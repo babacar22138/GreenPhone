@@ -1,0 +1,139 @@
+/* ----------------- titre et sous-titre --------------------- */
+
+#green{
+    color: var(--first-color);
+}
+
+#titre{
+    margin-bottom: 0;
+}
+
+#sous-titre{
+    text-align: center;
+    margin-top: 0;
+    font-size: 0.8rem;
+}
+
+/* ----------------- burger-icon + barre de recherche + icons --------------------- */
+
+.burger-search-bar-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+#burger:hover{
+    cursor: pointer;
+}
+
+/* ----------------- barre de recherche --------------------- */
+
+#search-bar{
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 6px;
+}
+
+/* ----------------- icons --------------------- */
+/*
+.icons{
+    display: none;
+}
+*/
+
+/* ----------------- menu de navigtion --------------------- */
+.menu-nav{
+    position: fixed;
+    /* background-color: var(--first-color); */
+    background-color: #262626;
+    color: white;
+    padding: 1.3rem;
+    transition: 0.7s;
+    transform: translateX(-270px);
+    /* border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    z-index: 200;
+    left: 0;
+    box-shadow: 0 0 2px black;
+    height: 100vh;
+    letter-spacing: 1px;
+}
+
+.visible{
+    transform: translateX(0);
+    width: 78%;
+}
+
+#burger{
+    transition: 0.7s;
+}
+
+.burger{
+    z-index: 201;
+}
+
+.burger-deplace{
+    transform: translateX(251px);
+    padding-right: 5px;
+}
+
+.menu-nav p {
+    margin-top: 0;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    /* color: var(--text-color); */
+    color: white;
+}
+
+nav ul li{
+    transition: 0.2s;
+    margin-bottom: 0.5rem;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+nav ul li:hover{
+    transform: translateY(-2px);
+    background-color: #2e2e2e;
+    
+}
+
+#bon-plan{
+    background-color: red;
+}
+
+/* ----------------- menu de navigtion - ouvert --------------------- */
+#burger{
+    transition: 0.7s;
+}
+
+.burger-deplace#burger span:nth-child(1) {
+    transform: translateY(26px) rotate(45deg);
+    background-color: white;
+}
+.burger-deplace span:nth-child(2) {
+    opacity: 0;
+}
+.burger-deplace#burger span:nth-child(3) {
+    transform: rotate(-45deg);
+    background-color: white;
+}
+
+        /* --------- overlay----------- */
+
+.overlay-visible{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+}

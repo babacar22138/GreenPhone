@@ -1,0 +1,27 @@
+.bannier{
+    align-content: center;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.bannier img{
+    width: 20rem;
+    /* width: 55%; */
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    background: url(<path-to-image>) lightgray -0.14px 0px / 100.022% 100% no-repeat;
+    filter: grayscale(40%);
+}
+
+.bannier p{
+    position: absolute;
+    z-index: 2;
+    color: #F2F2F2;
+    top: 3.2rem;
+    left: 50%;
+    font-weight: 700;
+    transform: translateX(-95px);
+    text-align: center;
+}
+
