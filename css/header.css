@@ -74,7 +74,7 @@
 }
 
 .burger-deplace{
-    transform: translateX(251px);
+    transform: translateX(65vw);
     padding-right: 5px;
 }
 
@@ -111,9 +111,6 @@ nav ul li:hover{
 }
 
 /* ----------------- menu de navigtion - ouvert --------------------- */
-#burger{
-    transition: 0.7s;
-}
 
 .burger-deplace#burger span:nth-child(1) {
     transform: translateY(26px) rotate(45deg);

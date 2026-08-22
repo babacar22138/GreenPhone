@@ -1,3 +1,11 @@
+h2{
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* ----------------- bannier --------------------- */
+
+
 .bannier{
     align-content: center;
     margin-top: 2rem;
@@ -25,3 +33,129 @@
     text-align: center;
 }
 
+/* ----------------- best seller --------------------- */
+
+
+.articles-best-seller{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.article{
+    gap: 0.2rem;
+    padding: 15px;
+    /* background-color: #E8F5EC; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+
+.article-infos{
+    margin: auto;
+}
+
+.etat{
+    color: gray;
+}
+
+.article p{
+    margin: 0;
+}
+
+.prt-haut, .apd-prix{
+    display: flex;
+    flex-direction: row;
+}
+
+.article img{
+    height: 115px;
+    margin-right: 6px;
+}
+
+.intitule-article{
+    font-weight: bold;
+}
+
+.prix{
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #39D67A;
+}
+
+.prix, .ald{
+    padding-left: 0.2rem;
+}
+
+.ald{
+    text-decoration: line-through;
+}
+
+.ajt-panier{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* ----------------- produits de qualité --------------------- */
+
+
+.qualites{
+    padding: 0 25px;
+}
+
+.qualite{
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+}
+
+.qualite p{
+    margin: 0 25px;
+}
+
+.produits-qualite img{
+    display: none;
+}
+
+/* ----------------- avis des clients --------------------- */
+.avis{
+    padding: 20px;
+}
+
+.avis-seul{
+    border: 1px solid #c5c5c5;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.avis-seul h4{
+    margin-top: 0;
+}
+
+.profil-client{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.profil-client img{
+    width: 35px;
+    height: 35px;
+    border-radius: 15px;
+    align-self: center;
+}
+
+.nom, .produit{
+    margin: 0;
+}
+
+.profil-client .produit{
+    color: #c5c5c5;
+}

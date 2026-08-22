@@ -10,3 +10,10 @@ burgerBtn.addEventListener('click', function (e) {
     burgerBtn.classList.toggle('burger-deplace');
     overlay.classList.toggle('overlay-visible');
 });
+
+overlay.addEventListener('click', function(e) {
+    e.preventDefault();
+    menu_nav.classList.remove('visible');
+    burgerBtn.classList.remove('burger-deplace');
+    overlay.classList.remove('overlay-visible');
+})
