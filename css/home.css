@@ -48,6 +48,7 @@ h2{
     /* background-color: #E8F5EC; */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
+    margin-top: 10px;
 }
 
 .article-infos{
@@ -133,6 +134,8 @@ h2{
     border: 1px solid #c5c5c5;
     border-radius: 12px;
     padding: 30px;
+    margin-top: 10px;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); */
 }
 
 .avis-seul h4{
