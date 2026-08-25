@@ -27,32 +27,33 @@
         <p id="sous-titre">Le reconditionné en toute confiance !</p>
 
         <!-- icon menu burger -->
-        <div class="burger-search-bar-icons">
-            <!-- burger icon -->
-            <div class="burger">
-                <input type="checkbox" id="grid">
+        <div class="burger-search-bar-icons elt-header">
+            <div class="nav-phone">
+                <!-- burger icon -->
+                <div class="burger">
+                    <input type="checkbox" id="grid">
 
-                <label for="grid" id="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
+                    <label for="grid" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+
+                <!-- search bar -->
+                <div class="search-bar">
+                    <input type="search" id="search-bar" placeholder="iPhone 12...">
+                </div>
+
+                <!-- icons -->
+                <div class="icons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-regular fa-user"></i>
+                </div>
             </div>
 
-            <!-- search bar -->
-            <div class="search-bar">
-                <input type="search" id="search-bar" placeholder="iPhone 12...">
-            </div>
-
-            <!-- icons -->
-            <div class="icons">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-regular fa-user"></i>
-            </div>
-            
-            
             <div class="menu-nav">
-                <p>Faite votre choix !</p>
+                <p class="choix">Faite votre choix !</p>
                 <nav>
                     <ul>
                         <li id="bon-plan"><a href="#">Bon plan</a></li>
@@ -82,7 +83,7 @@
                     <div class="prt-haut">
                         <img src="img/iPhone/14/noir.webp" alt="iPhone 14 noir">
                         <div class="article-infos">
-                            <p class="intitule-article">iPhone 14</p>
+                            <p class="intitule-article" id="intitule-article">iPhone 14</p>
                             <div class="apd-prix">
                                 <p class="apd">
                                     A partir de 
@@ -100,7 +101,7 @@
                     <div class="prt-haut">
                         <img src="img/AirPods/3.webp" alt="AirPods 3">
                         <div class="article-infos">
-                            <p class="intitule-article">AirPods 3</p>
+                            <p class="intitule-article" id="intitule-article">AirPods 3</p>
                             <div class="apd-prix">
                                 <p class="apd">
                                     A partir de 
@@ -118,7 +119,7 @@
                     <div class="prt-haut">
                         <img src="img/samsung/S25/bleu.webp" alt="Samsung S25 bleu">
                         <div class="article-infos">
-                            <p class="intitule-article">Samsung S25</p>
+                            <p class="intitule-article" id="intitule-article">Samsung S25</p>
                             <div class="apd-prix">
                                 <p class="apd">
                                     A partir de 
@@ -172,39 +173,41 @@
         <!-- avis des clients -->
         <div class="avis">
             <h2>Des clients ravis</h2>
+            <div class="liste-avis">
+                <div class="avis-seul">
+                    <h4>“Comme neuf, aucune rayure, je n'y crois toujours pas pour ce prix.”</h4>
+                    <div class="profil-client">
+                        <img src="img/home/avis/avis-1.jpg" alt="" class="photo">
+                        <div class="nom-client-produit">
+                            <p class="nom">Marie</p>
+                            <p class="produit">iPhone 13</p>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="avis-seul">
-                <h4>“Comme neuf, aucune rayure, je n'y crois toujours pas pour ce prix.”</h4>
-                <div class="profil-client">
-                    <img src="img/home/avis/avis-1.jpg" alt="" class="photo">
-                    <div class="nom-client-produit">
-                        <p class="nom">Marie</p>
-                        <p class="produit">iPhone 13</p>
+                <div class="avis-seul">
+                    <h4>“Livraison rapide et emballage soigné, du vrai sérieux.”</h4>
+                    <div class="profil-client">
+                        <img src="img/home/avis/avis-2.jpg" alt="" class="photo">
+                        <div class="nom-client-produit">
+                            <p class="nom">Ibrahim</p>
+                            <p class="produit">Samsung S22</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="avis-seul">
+                    <h4>“Content de donner une seconde vie à un téléphone plutôt que d'en racheter un neuf.”</h4>
+                    <div class="profil-client">
+                        <img src="img/home/avis/avis-3.jpg" alt="" class="photo">
+                        <div class="nom-client-produit">
+                            <p class="nom">Léa</p>
+                            <p class="produit">iPhone 12</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="avis-seul">
-                <h4>“Livraison rapide et emballage soigné, du vrai sérieux.”</h4>
-                <div class="profil-client">
-                    <img src="img/home/avis/avis-2.jpg" alt="" class="photo">
-                    <div class="nom-client-produit">
-                        <p class="nom">Ibrahim</p>
-                        <p class="produit">Samsung S22</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="avis-seul">
-                <h4>“Content de donner une seconde vie à un téléphone plutôt que d'en racheter un neuf.”</h4>
-                <div class="profil-client">
-                    <img src="img/home/avis/avis-3.jpg" alt="" class="photo">
-                    <div class="nom-client-produit">
-                        <p class="nom">Léa</p>
-                        <p class="produit">iPhone 12</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </main>
 

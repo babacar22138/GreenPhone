@@ -1,6 +1,12 @@
 h2{
     text-align: center;
-    margin: 40px 0;
+    margin: 65px 0;
+}
+
+@media screen and (min-width:1100px) {
+    h2{
+        font-size: 2.2rem;
+    }
 }
 
 /* ----------------- bannier --------------------- */
@@ -127,7 +133,7 @@ h2{
 
 /* ----------------- avis des clients --------------------- */
 .avis{
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .avis-seul{
@@ -161,4 +167,154 @@ h2{
 
 .profil-client .produit{
     color: #c5c5c5;
+}
+
+/* ---------------------------------------------------------------- RESPÖNSIVE - MODE ORDI ------------------------------------------------------------ */
+
+@media (min-width: 800px) {
+    
+    /* ----------------- bannier --------------------- */
+
+    .bannier img{
+        width: 30rem;
+    }
+
+    .bannier p{
+        top: 6.2rem;
+    }
+
+    /* ----------------- best seller --------------------- */
+
+    .articles-best-seller{
+        padding: 0 65px ;
+    }
+
+    .article-infos{
+        margin: 0 0 0 2rem;
+    }
+
+    .ajt-panier{
+        width: 40%;
+    }
+
+    .prt-haut{
+        padding: 25px;
+    }
+
+    /* ----------------- produits de qualité --------------------- */
+
+    .qualite{
+        padding: 0 50px;
+    }
+
+    .prt-gauche h2{
+        margin: 0 0 40px 0;
+    }
+
+    .produits-qualite{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 0 0 2rem;
+        margin: 65px 0;
+    }
+
+    .produits-qualite img{
+        width: 17rem;
+        display: inline-block;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+}
+
+
+@media (min-width: 1100px) {
+    h2, .produits-qualite{
+        margin: 80px 0;
+    }
+    
+    /* ----------------- bannier --------------------- */
+
+    .bannier img{
+        width: 55rem;
+    }
+
+    .bannier p{
+        top: 10.2rem;
+        left: 44%;
+        font-size: 2rem;
+    }
+
+    /* ----------------- best seller --------------------- */
+
+    .article img{
+        height: 260px;
+    }
+
+    .articles-best-seller{
+        flex-direction: row;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .prt-haut, .apd-prix{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #intitule-article{
+        margin: 20px 0;
+        font-size: 1.5rem;
+    }
+
+    .ajt-panier{
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    .prt-haut{
+        padding: 25px;
+    }
+
+    .article-infos{
+        margin: 0;
+    }
+
+    /* ----------------- produits de qualité --------------------- */
+
+    .qualite{
+        padding: 0 50px;
+    }
+
+    .prt-gauche h2{
+        margin: 0 0 40px 0;
+    }
+
+    .produits-qualite{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 0 0 20rem;
+    }
+
+    .produits-qualite img{
+        width: 32rem;
+    }
+
+    .qualite p{
+        font-size: 1.1rem;
+    }
+
+    /* ----------------- avis des clients --------------------- */
+
+    .liste-avis{
+        /* display: flex;
+        flex-direction: row;
+        gap: 2%;
+        padding: 25px; */
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        gap: 1.5rem;
+        padding: 25px;
+    }
 }
