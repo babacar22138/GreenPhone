@@ -40,7 +40,6 @@
     border-radius: 10px;
     border: 1px solid black;
     padding: 6px;
-    width: 300px;
 }
 
 /* ----------------- icons --------------------- */
@@ -205,5 +204,9 @@ nav ul li:hover{
 
     #bon-plan{
         font-weight: 700;
+    }
+
+    #search-bar{
+        width: 300px;
     }
 }
