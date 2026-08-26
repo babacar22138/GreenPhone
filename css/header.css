@@ -40,14 +40,27 @@
     border-radius: 10px;
     border: 1px solid black;
     padding: 6px;
+    width: 300px;
 }
 
 /* ----------------- icons --------------------- */
-/*
+
 .icons{
-    display: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 5px;
 }
-*/
+
+.icons a{
+    cursor: pointer;
+}
+
+.icons i{
+    color: black;
+}
+
 
 /* ----------------- menu de navigtion --------------------- */
 .menu-nav{
@@ -166,6 +179,11 @@ nav ul li:hover{
         padding: 12px;
     }
 
+    nav ul li:hover{
+        cursor: pointer;
+        background-color: inherit;
+    }
+
     nav ul li a{
         color: var(--text-color);
     }
@@ -183,5 +201,9 @@ nav ul li:hover{
     .nav-phone{
         width: inherit;
         gap: 40px;
+    }
+
+    #bon-plan{
+        font-weight: 700;
     }
 }
