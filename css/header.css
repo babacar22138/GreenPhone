@@ -215,7 +215,9 @@ nav ul li:hover{
     #bon-plan{
         font-weight: 700;
     }
+}
 
+@media screen and (min-width:1100px) {
     #search-bar{
         width: 300px;
     }
