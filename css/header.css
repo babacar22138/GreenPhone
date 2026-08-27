@@ -43,7 +43,7 @@ header{
     flex-direction: row; 
     justify-content: space-between;
     width: 100%;
-    padding: 0 7px;
+    padding: 0 6px;
 }
 
 /* ----------------- barre de recherche --------------------- */
@@ -172,6 +172,10 @@ nav ul li:hover{
 @media (min-width: 800px) {
     .burger{
         display: none;
+    }
+
+    .nav-phone{
+        width: inherit;
     }
 
     .menu-nav{
