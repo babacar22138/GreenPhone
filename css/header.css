@@ -1,3 +1,13 @@
+/* ----------------- animation --------------------- */
+header{
+    opacity: 0;
+    transition: 0.4s ease-in;
+}
+
+.apparition-h{
+    opacity: 1;
+}
+
 /* ----------------- titre et sous-titre --------------------- */
 
 #green{

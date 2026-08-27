@@ -11,6 +11,15 @@ h2{
 
 /* ----------------- bannier --------------------- */
 
+/* ----- animation ------ */
+.bannier{
+    opacity: 0;
+    transition: 0.4s ease-in;
+}
+
+.apparition-b{
+    opacity: 1;
+}
 
 .bannier{
     align-content: center;
@@ -55,7 +64,23 @@ h2{
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     margin-top: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
+.article:hover{
+    cursor: pointer;
+}
+
+.article.apparition-a{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.article:nth-child(1) { transition-delay: 0s; }
+.article:nth-child(2) { transition-delay: 0.15s; }
+.article:nth-child(3) { transition-delay: 0.3s; }
 
 .article-infos{
     margin: auto;
@@ -118,15 +143,26 @@ h2{
 
 /* ----------------- produits de qualité --------------------- */
 
-
-.qualites{
-    padding: 0 25px;
+.qualite.apparition-q, #img-produit-qualite.apparition-q, .chiffres.apparition-q{
+    opacity: 1;
+    transform: translateY(0);
 }
+
+.qualite:nth-child(1) { transition-delay: 0s; }
+.qualite:nth-child(2) { transition-delay: 0.15s; }
+.qualite:nth-child(3) { transition-delay: 0.3s; }
 
 .qualite{
     display: flex;
     flex-direction: row;
     margin-top: 12px;
+    padding: 0 25px;
+}
+
+#img-produit-qualite, .qualite, .chiffres{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .qualite p{
@@ -142,6 +178,15 @@ h2{
 }
 
 /* ----------------- avis des clients --------------------- */
+.avis-seul.apparition-avis{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.avis-seul:nth-child(1) { transition-delay: 0s; }
+.avis-seul:nth-child(2) { transition-delay: 0.15s; }
+.avis-seul:nth-child(3) { transition-delay: 0.3s; }
+
 .avis{
     padding: 0 20px;
 }
@@ -151,6 +196,9 @@ h2{
     border-radius: 12px;
     padding: 30px;
     margin-top: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); */
 }
 
@@ -244,7 +292,7 @@ h2{
     }
 
     h2, .produits-qualite{
-        margin: 110px 0;
+        margin: 140px 0;
     }
     
     /* ----------------- bannier --------------------- */
